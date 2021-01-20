@@ -29,8 +29,9 @@ public class ArrayStack<E> {
      */
     public E peek() {
         int len = myArray.length;
-        if (len == 0)
-            throw new EmptyStackException();
+        if (len == 0) {
+            return null;
+        }
         return myArray[len - 1];
     }
 
